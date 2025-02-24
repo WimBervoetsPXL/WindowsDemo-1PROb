@@ -46,13 +46,19 @@ public partial class MainWindow : Window
         student.FirstName = firstNameTextBox.Text;
         student.StudentNumber = studentNumberTextBox.Text;
 
-   
+
 
         //StudentWindow window = new StudentWindow(student);
         //window.Show();
 
-        StudentWindow window = new StudentWindow();
-        window.Student = student;
-        window.Show();
+        //StudentWindow window = new StudentWindow();
+        //window.Student = student;
+        //window.Show();
+
+        Data.Student = student;
+
+        StudentViaDataWindow w = new StudentViaDataWindow();
+        w.Show();
+
     }
 }
